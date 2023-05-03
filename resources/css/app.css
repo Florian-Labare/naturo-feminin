@@ -272,6 +272,11 @@ html {
     overflow: hidden;
 }
 
+em {
+    color: #efafab;
+    font-weight: normal;
+}
+
 @media all and (max-width: 991px) {
     .line-left {
        display: none;
@@ -488,6 +493,7 @@ html {
     }
 
     #content-etude {
+        margin-top: -1.5rem;
         width: 18rem;
     }
 
@@ -509,6 +515,13 @@ html {
 
     #line-chart-accordion > svg {
         margin-top: 2rem;
+        width: 1rem;
+    }
+
+    em {
+        font-size: .8rem;
+        color: #efafab;
+        font-weight: normal;
     }
 
 

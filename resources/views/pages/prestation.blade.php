@@ -84,7 +84,7 @@
                         <div class="square light-green square-line-chart-2 rounded-bl-lg"></div>
                         <div class="ml-5">
                             <div class="flex">
-                                <span class="line-paragraphe"><strong>Une perte de 21%</strong> d’efficacité chez les collaborateurs non enthousiastes et non épanouis. (voir plus) </span>
+                                <span class="line-paragraphe"><strong>Une perte de 21%</strong> d’efficacité chez les collaborateurs non enthousiastes et non épanouis. <br> <em><i></i>voir plus</em> </span>
                                 <a href="#content-etude" id="line-chart-accordion"><i id="toggleChartLineButton" class="fas fa-add" style="color: #efafab"></i></a>
                             </div>
                             <div id="content-etude">
