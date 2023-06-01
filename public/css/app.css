@@ -691,6 +691,9 @@ video {
 .mb-7{
   margin-bottom: 1.75rem;
 }
+.ml-4{
+  margin-left: 1rem;
+}
 .ml-5{
   margin-left: 1.25rem;
 }
@@ -711,6 +714,9 @@ video {
 }
 .mt-7{
   margin-top: 1.75rem;
+}
+.mt-9{
+  margin-top: 2.25rem;
 }
 .block{
   display: block;
@@ -782,6 +788,9 @@ video {
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
+.font-light{
+  font-weight: 300;
+}
 .font-semibold{
   font-weight: 600;
 }
@@ -816,10 +825,20 @@ html {
 
 }
 
+#qvct,
+#pariculiers,
+.massage-main-container,
+.massage-prestations-main-container,
+.pie-and-line-chart-container {
+    margin-top: 8rem;
+}
+
 /* ----- section accueil ----- */
 
 .equipe-professionnels-container,
-.notre-approche-container  {
+.notre-approche-container,
+.consultations-seul-fleurs-container,
+.consultation-fleurs-section  {
     margin-top: 10rem;
 }
 
@@ -912,8 +931,6 @@ html {
 }
 
 
-
-
 /* ----- section prestations ----- */
 .section-prestations {
     margin-top: 10rem !important;
@@ -924,10 +941,12 @@ html {
 }
 
 /* bien-être */
-#bien-etre {
+#bien-etre, #vos-enjeux {
     margin-top: 3rem;
 }
-.bien-etre-title {
+.bien-etre-title,
+.particuliers-title,
+.notre-reponse-title {
     color: black;
     -webkit-text-decoration: underline #f7cac5 2px solid;
             text-decoration: underline #f7cac5 2px solid;
@@ -960,6 +979,12 @@ html {
 
 .line-separator {
     width: 2px;
+    background-color: #f7cac5;
+}
+
+.line-separator-hor {
+    margin-top: 1.5rem;
+    height: 2px;
     background-color: #f7cac5;
 }
 
@@ -1005,9 +1030,27 @@ html {
     background-color: #efafab;
 }
 
-.etude-bien-etre-title {
+.light-green-ipad {
+    width: 1.75rem;
+}
+
+.etude-bien-etre-title,
+.accompagnement-complet-title,
+.consultation-seule-title,
+.consultation-fleurs-title,
+.massage-prestations-title {
     font-size: 1.1rem;
     color: #efafab;
+}
+
+.prevention-accompagnement-title {
+    color: #efafab;
+    margin-bottom: 2rem;
+    font-size: 1.3rem;
+}
+
+.consultation-fleurs-title, .massage-prestations-title {
+    margin-bottom: 2rem;
 }
 
 .objectif-bien-etre-paragraphe {
@@ -1020,13 +1063,6 @@ html {
 }
 
 /* qvct */
-#qvct {
-    margin-top: 8rem;
-}
-
-.pie-and-line-chart-container {
-    margin-top: 8rem;
-}
 
 .pie-and-line-chart-flex-container {
     margin-top: 3rem;
@@ -1053,12 +1089,12 @@ html {
 }
 
 #line-chart-accordion {
-    transition: 0.4s;
     margin-left: 1rem;
     font-size: 2rem;
 }
 
 #line-chart-accordion > svg {
+    cursor: pointer;
     margin-bottom: 2rem;
 }
 
@@ -1071,10 +1107,259 @@ html {
     overflow: hidden;
 }
 
+em {
+    color: #efafab;
+    font-weight: normal;
+}
+
+/* particuliers */
+
+.paragraphe-prestation-accopmpagnement-complet {
+    margin-top: 3.5rem;
+    width: 28rem;
+    font-weight: lighter;
+    line-height: 2rem;
+}
+
+.content-accompagnement-complet-grid {
+   display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    line-height: 2rem;
+}
+
+.accompagnement-complet-container {
+    align-self: center;
+    width: 43rem;
+    max-width: 43rem;
+}
+
+.bilan-title, .bilan-title-2 {
+    margin-top: 2rem;
+    width: 16rem;
+    line-height: 1.5rem;
+}
+
+.fleurs-bach-title {
+    width: 16rem;
+    line-height: 1.5rem;
+}
+
+.bilan-title-2 {
+    margin-left: -1rem;
+}
+
+.accompagnement-complet-item {
+    margin-left: 1rem;
+}
+
+.accompagnement-complet-list, .fleurs-bach-list {
+    font-size: .85rem;
+}
+
+.bilan-item::before {
+    content: "";
+    width: .4em;
+    height: .4em;
+    background-color: #efafab;
+    display: inline-block;
+    margin-left: -1rem;
+    margin-bottom: .15rem;
+    margin-right: .5rem;
+}
+
+.accompagnement-complet-item::before {
+    content: "•";
+    color: #efafab;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em
+}
+
+.compte-rendu-plus {
+    cursor: pointer;
+    color: #efafab;
+    font-size: 1.5rem;
+}
+
+#compte-rendu, #fleurs-bach {
+    cursor: pointer;
+    -webkit-text-decoration: #efafab solid 1px;
+            text-decoration: #efafab solid 1px;
+    font-size: .85rem;
+    flex: 1;
+    padding: 0 2.5rem 0 .5rem;
+    font-weight: bold;
+}
+
+
+#compte-rendu-content, #fleurs-bach-content{
+    display: none;
+}
+
+.consulation-seule-section {
+    margin-top: 2rem;
+    align-self: center;
+}
+
+.consultation-fleurs-section {
+    margin-top: 3.5rem;
+}
+
+.consultation-fleurs-paragraphe {
+    margin-top: 2rem;
+    width: 25rem;
+}
+
+.consultation-seule-bilan-list,
+.consultation-fleurs-bach-list,
+.fleurs-bach-list,
+.massage-prestations-list {
+    line-height: 2rem;
+    font-weight: lighter;
+    margin-left: 1rem;
+}
+
+.consultation-fleurs-bach-container-flex {
+    width: 48em;
+}
+
+.consultation-seule-content,
+.consultation-fleurs-bach-container,
+.fleurs-bach-container {
+    margin-top: 2rem;
+}
+
+.fleurs-bach-container {
+    max-width: 55%;
+    width: 55%;
+    padding-left: .5rem;
+}
+
+.fleurs-bach-list {
+    margin-bottom: 1rem;
+}
+
+.consultation-fleurs-paragraphe {
+    line-height: 2rem;
+    font-weight: lighter;
+    margin-bottom: 1rem;
+}
+
+.em-element-fleur-bach {
+    margin-top: .15rem;
+}
+
+.img-bien-fleurs-bach {
+    margin-top: 2.5rem;
+    width: 25rem;
+}
+
+.img-massage {
+    width: 35rem;
+}
+
+.massage-paragraphe {
+    line-height: 2rem;
+    width: 35rem;
+    align-self: center;
+}
+
+.content-anamnese {
+    max-width: 20rem;
+    width: 20rem;
+    margin-bottom: .75rem;
+}
+
+.message-prestation-section:nth-child(1) {
+    padding-right: 1rem;
+    width: 27rem;
+}
+
+.message-prestation-section:nth-child(3) {
+    padding-left: 1.5rem;
+    padding-right: 1rem;
+    width: 30rem;
+}
+
+.message-prestation-section-after-line {
+    padding-left: 1.5rem;
+    width: 18rem;
+}
+
+#massage-content-1,
+#massage-content-2,
+#massage-content-3,
+#massage-content-4 {
+    display: none;
+    font-size: .85rem;
+}
+
+#massage-presta-1,
+#massage-presta-2,
+#massage-presta-3,
+#massage-presta-4 {
+    font-size: .75rem;
+    font-weight: bold;
+    margin-left: .5rem;
+    cursor: pointer;
+}
+
+/* vos enjeux */
+.mosaique-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5rem;
+    padding-left: 2rem;
+}
+
+.prevention-accompagnement {
+    width: 58%;
+    align-self: center;
+}
+
+.line-separator-mosaique{
+    width: 5px !important;
+}
+
+.prevention-accompagnement-list {
+    font-weight: lighter;
+    line-height: 2rem;
+}
+
+.item-mosaique-grid {
+    display: flex;
+    background-color: #f7cac5;
+    padding: 1.5rem;
+}
+
+.item-mosaique-grid:nth-child(1) {
+    height: 7rem;
+}
+
+.item-mosaique-grid:nth-child(1),
+.item-mosaique-grid:nth-child(3),
+.item-mosaique-grid:nth-child(5),
+.item-mosaique-grid:nth-child(7),
+.item-mosaique-grid:nth-child(9) {
+    background-color: #a3cd8a;
+}
+
+.item-mosaique-grid > div{
+    width: 100%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
 @media all and (max-width: 991px) {
-    .line-left {
+    .line-left,
+    .line-under-video,
+    br,
+    .line-separator-hor {
        display: none;
     }
+
     /* Slogan et video */
     .slogan-et-video-container {
         height: 50%;
@@ -1082,10 +1367,6 @@ html {
         margin-top: 1rem;
         background-color: #f7cac5;
         border-bottom-left-radius: 2rem;
-    }
-
-    .line-under-video {
-        display: none;
     }
 
     .video-container {
@@ -1117,10 +1398,6 @@ html {
 
     .equipe-professionnels-container {
         margin-top: 1.5rem;
-    }
-
-    br {
-        display: none;
     }
 
     .list-professionnels {
@@ -1187,11 +1464,10 @@ html {
         width: 100%;
     }
 
-    #bien-etre {
-        margin-top: 1.5rem;
-    }
 
-    .bien-etre-title {
+    .bien-etre-title,
+    .particuliers-title,
+    .notre-reponse-title {
         color: black;
         text-align: start;
         -webkit-text-decoration: underline #f7cac5 2px solid;
@@ -1201,7 +1477,12 @@ html {
         line-height: 2rem;
     }
 
-    .etude-bien-etre-title, .alan-et-harris-paragraphe {
+    .etude-bien-etre-title,
+    .alan-et-harris-paragraphe,
+    .accompagnement-complet-title,
+    .consultation-seule-title,
+    .consultation-fleurs-title,
+    .massage-prestations-title {
         font-size: .9rem !important;
     }
 
@@ -1229,6 +1510,11 @@ html {
         font-size: .8rem;
         margin-top: 1rem;
         line-height: 1.5rem;
+    }
+
+    .em-element-fleur-bach,
+    .em-element {
+        font-size: .8rem !important;
     }
 
     .img-bien-etre-prestation-qvct {
@@ -1274,6 +1560,7 @@ html {
     .square {
         width: 2rem;
         height: 1rem;
+        max-width: 2rem;
     }
 
     /* line-chart and doughnut-chart */
@@ -1281,7 +1568,7 @@ html {
         padding: 0rem 3rem 0rem 3rem;
     }
 
-    .pie-and-line-chart-container {
+    .pie-and-line-chart-container, .consultations-seul-fleurs-container {
         margin-top: 5rem;
     }
     .pie-chart-flex-container, .line-chart-flex-container {
@@ -1289,7 +1576,9 @@ html {
     }
 
     #content-etude {
-        width: 18rem;
+        margin-top: -1rem;
+        width: 15rem;
+        margin-bottom: 2.5rem;
     }
 
     .doughnut-paragraphe {
@@ -1304,22 +1593,153 @@ html {
         margin-top: 1.5rem;
     }
 
-    .square-line-chart-2 {
-        width: 1.55rem;
+    #line-chart-accordion > svg {
+        margin-top: 2.1rem;
+        width: 1rem;
     }
 
-    #line-chart-accordion > svg {
+    em {
+        font-size: .8rem;
+        color: #efafab;
+        font-weight: normal;
+    }
+
+    #pariculiers {
+        margin-top: 1.5rem;
+    }
+
+    .accompagnement-complet-container {
+        margin-top: 1.5rem;
+        width: 100%;
+    }
+
+    .bilan, .consultation-seule-bilan-list {
+        margin-top: .5rem !important;
+        line-height: 1.5rem;
+    }
+
+    .bilan-title {
+        width: 100%;
+        margin-top: 1rem !important;
+    }
+
+    .naturopathie-subtitle {
+        font-size: .9rem;
+    }
+
+    .paragraphe-prestation-accopmpagnement-complet {
+        width: 100%;
+        font-size: .8rem;
+        margin-top: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .content-accompagnement-complet-grid, .consultation-seule-content  {
+        font-size: .8rem;
+        display: flex;
+        flex-direction: column;
+        line-height: 2rem;
+    }
+
+    .accompagnement-complet-list {
+        line-height: 1.5rem;
+        font-size: .7rem;
+    }
+
+    .consultation-fleurs-paragraphe, .consulation-seule-section  {
+        width: 100%;
+    }
+
+    .consultation-fleurs-paragraphe {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: .8rem;
+        line-height: 1.5rem;
+    }
+
+    .img-resize-huiles-essentielles {
         margin-top: 2rem;
+        width: 100%;
+    }
+
+    .consultation-fleurs-bach-container-flex, .consultation-fleurs-bach-container  {
+        width: 100%;
+        font-size: .9rem;
+    }
+
+    .fleurs-bach-title {
+
+        line-height: 1.5rem;
+    }
+
+    .light-green-ipad {
+        width: 1rem;
+    }
+
+    .consultation-fleurs-bach-container {
+        font-size: .8rem;
+    }
+
+    .consultation-fleurs-bach-list {
+        line-height: 1.5rem;
     }
 
 
 }
+@media only screen and (min-width: 810px) and (orientation: portrait) {
+    #line-chart-accordion > svg {
+        margin-top: 0;
+    }
 
+    .light-green-ipad {
+        width: 2rem;
+    }
+
+    .content-accompagnement-complet-grid {
+        flex-direction: row;
+    }
+
+    #content-etude {
+        display: block;
+        width: 32rem;
+        margin-top: -1.5rem;
+    }
+
+    .bilan-title-2 {
+        margin-top: 1rem;
+    }
+
+    .consultation-fleurs-bach-container {
+        font-size: .8rem;
+    }
+
+    .consultation-fleurs-bach-list {
+        line-height: 1.5rem;
+    }
+
+    .consultation-fleurs-bach-container-flex {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .fleurs-bach-container {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .fleurs-bach-list {
+        font-size: .7rem;
+    }
+
+    .line-vertical-fleurs-bach,
+    .line-separator-hor {
+        display: none;
+    }
+}
 .hover\:bg-rose-300:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(253 164 175 / var(--tw-bg-opacity));
 }
-
 @media (prefers-color-scheme: dark){
 
   .dark\:border-gray-700{
@@ -1337,7 +1757,6 @@ html {
     color: rgb(255 255 255 / var(--tw-text-opacity));
   }
 }
-
 @media (min-width: 768px){
 
   .md\:absolute{
@@ -1373,7 +1792,6 @@ html {
     display: block;
   }
 }
-
 @media (min-width: 1024px){
 
   .lg\:mr-5{

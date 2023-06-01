@@ -2,7 +2,7 @@ const pieCanvas = document.getElementById('pieCanvas');
 new Chart(pieCanvas, {
     type: 'doughnut',
     data: {
-        labels: ['Réduction volontaire de la qualité du travail fourni'],
+        labels: ['Réduction volontaire de la qualité du travail fourni', 'Réduction délibérée des efforts', 'Neutre'],
         datasets: [{
             data: [33.3, 50, 16.6],
             backgroundColor: [
