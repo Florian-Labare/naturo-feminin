@@ -25,6 +25,7 @@
             <div id="apropos-container">@include('pages.apropos')</div>
             <div id="contact-container">@include('pages.contact')</div>
         </div>
+        <footer></footer>
     </body>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

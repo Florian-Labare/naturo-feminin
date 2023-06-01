@@ -2,9 +2,11 @@
      class="bg-white max-w-7xl mx-auto font-poppins p-4 flex items-center justify-between lg:text-grey"
 >
     <div class="logo w-24 md:w-32">
-        <img
-            src="{{url('/images/logo.png')}}"
-        />
+        <a href="#">
+            <img
+                src="{{url('/images/logo.png')}}"
+            />
+        </a>
     </div>
     <div class="toggle">
         <i class="fas fa-bars ouvrir"></i>
@@ -18,7 +20,7 @@
             </div>
         </li>
         <li>
-            <a href="#prestations-container" class="nav-link uppercase" data-tab>Vos enjeux</a>
+            <a href="#enjeux-trigger" class="nav-link uppercase" data-tab>Vos enjeux</a>
         </li>
         <li>
             <div class="group">

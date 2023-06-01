@@ -1,21 +1,90 @@
-// accordion for prestation line-chart
-const accordion = document.getElementById("line-chart-accordion");
-accordion.addEventListener("click", function() {
-    const content = document.getElementById("content-etude");
-    const toggleChartLineButton = document.getElementById("toggleChartLineButton");
-    const emElement = document.getElementsByTagName("em")[0];
+const accordions =  [
+    {
+        elem: document.getElementById("line-chart-accordion"),
+        contentId: "content-etude",
+        toggleButton: "toggleChartLineButton",
+        emElement: ""
+    },
 
-    if (content.style.display === "block") {
-        content.style.display = "none";
-        toggleChartLineButton.classList.remove('fa-minus');
-        toggleChartLineButton.style.color = "#efafab";
-        toggleChartLineButton.classList.add('fa-plus');
-        emElement.innerHTML = "voir plus";
+    {
+        elem: document.getElementById("fleurs-bach"),
+        contentId: "fleurs-bach-content",
+        toggleButton: "",
+        emElement: "em-element-fleur-bach"
+    },
+
+    {
+        elem: document.getElementById("compte-rendu"),
+        contentId: "compte-rendu-content",
+        toggleButton: "",
+        emElement: "em-element"
+    },
+
+    {
+        elem: document.getElementById("massage-presta-1"),
+        contentId: "massage-content-1",
+        toggleButton: "",
+        emElement: "em-element-massage-first-section"
+    },
+
+    {
+        elem: document.getElementById("massage-presta-2"),
+        contentId: "massage-content-2",
+        toggleButton: "",
+        emElement: "em-element-massage-second-section"
+    },
+
+    {
+        elem: document.getElementById("massage-presta-3"),
+        contentId: "massage-content-3",
+        toggleButton: "",
+        emElement: "em-element-massage-third-section"
+    },
+
+    {
+        elem: document.getElementById("massage-presta-4"),
+        contentId: "massage-content-4",
+        toggleButton: "",
+        emElement: "em-element-fourth-section"
+    },
+
+]
+
+accordions.forEach(({elem, toggleButton, emElement, contentId})=> {
+    elem.addEventListener("click", () => {
+       accordionOnClick(contentId, toggleButton, emElement);
+    });
+
+})
+
+function accordionOnClick(contentId, toggleButton, emElement) {
+    const contentToDislpay = document.getElementById(contentId);
+    const em = document.getElementsByClassName(emElement)[0];
+    const toggle = document.getElementById(toggleButton);
+
+    if (contentToDislpay.style.display === "block") {
+        contentToDislpay.style.display = "none";
+
+        if(toggleButton !== "") {
+            toggle.classList.remove('fa-minus');
+            toggle.style.color = "#efafab";
+            toggle.classList.add('fa-plus');
+        } else {
+            em.style.color = "#efafab";
+            em.innerHTML = "(voir plus)";
+        }
+
     } else {
-        content.style.display = "block";
-        toggleChartLineButton.classList.add('fa-minus');
-        toggleChartLineButton.style.color = "#a3cd8a";
-        toggleChartLineButton.classList.remove('fa-plus');
-        emElement.innerHTML = "";
+        contentToDislpay.style.display = "block";
+
+        if(toggleButton !== "") {
+            toggle.classList.add('fa-minus');
+            toggle.style.color = "#a3cd8a";
+            toggle.classList.remove('fa-plus');
+        } else {
+            em.style.color = "#a3cd8a";
+            em.innerHTML = "(voir moins)";
+        }
     }
-});
+}
+
