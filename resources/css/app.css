@@ -496,16 +496,19 @@ em {
     cursor: pointer;
 }
 
-/* vos enjeux */
+/* section vos enjeux */
 .mosaique-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1.5rem;
-    padding-left: 2rem;
+    margin-left: 2rem;
+    background-image: url('/../images/buddha-918073_1920.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .prevention-accompagnement {
-    width: 58%;
+    width: 65%;
     align-self: center;
 }
 
@@ -520,9 +523,10 @@ em {
 
 .item-mosaique-grid {
     display: flex;
-    background-color: #f7cac5;
     padding: 1.5rem;
+    border: white 8px solid;
 }
+
 
 .item-mosaique-grid:nth-child(1) {
     height: 7rem;
@@ -533,7 +537,6 @@ em {
 .item-mosaique-grid:nth-child(5),
 .item-mosaique-grid:nth-child(7),
 .item-mosaique-grid:nth-child(9) {
-    background-color: #a3cd8a;
 }
 
 .item-mosaique-grid > div{
@@ -541,6 +544,11 @@ em {
     display: flex;
     align-self: center;
     justify-content: center;
+}
+
+/* section à propos */
+.apropos-title {
+    width: 14.5rem;
 }
 
 @media all and (max-width: 991px) {
