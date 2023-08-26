@@ -843,14 +843,12 @@ html {
 }
 
 .slogan-et-video-container {
-    margin-top: 2rem;
-    height: 53rem;
+    height: 40rem;
     border-bottom-left-radius: 6rem;
     background-color: #f7cac5;
 }
 
 .video-container {
-    width: 90%;
     padding: 3rem;
     align-self: center;
 }
@@ -941,7 +939,7 @@ html {
 }
 
 /* bien-être */
-#bien-etre, #vos-enjeux {
+#bien-etre, #vos-enjeux, #apropos{
     margin-top: 3rem;
 }
 .bien-etre-title,
@@ -1310,10 +1308,12 @@ em {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-left: 2rem;
-    background-image: url('/../images/buddha-918073_1920.jpg');
+    background-image: url('/../images/wellness.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    filter: hue-rotate(110deg);
+    -webkit-filter: hue-rotate(110deg);
 }
 
 .prevention-accompagnement {
@@ -1336,29 +1336,23 @@ em {
     border: white 8px solid;
 }
 
-
-.item-mosaique-grid:nth-child(1) {
-    height: 7rem;
-}
-
-.item-mosaique-grid:nth-child(1),
-.item-mosaique-grid:nth-child(3),
-.item-mosaique-grid:nth-child(5),
-.item-mosaique-grid:nth-child(7),
-.item-mosaique-grid:nth-child(9) {
-}
-
 .item-mosaique-grid > div{
     width: 100%;
     display: flex;
     align-self: center;
-    justify-content: center;
+    max-height: 7rem;
 }
 
 /* section à propos */
 .apropos-title {
     width: 14.5rem;
 }
+
+.qui-sommes-nous-paragraphe {
+    width: 35rem;
+    line-height: 2rem;
+}
+
 
 @media all and (max-width: 991px) {
     .line-left,
@@ -1467,7 +1461,7 @@ em {
         margin-top: 2rem;
     }
 
-    .img-bien-etre-prestation {
+    .img-bien-etre-prestation, .img-massage {
         margin-top: 2rem;
         width: 100%;
     }
@@ -1509,7 +1503,7 @@ em {
         margin-bottom: .4rem;
     }
 
-    #qvct {
+    #qvct, .massage-main-container {
         margin-top: 4rem;
     }
 
@@ -1547,7 +1541,8 @@ em {
     .chart-container {
         margin-top: 2rem;
     }
-    .collabs-container, .bar-container {
+    .collabs-container, .bar-container,
+    .width-qui-sommes-nous {
         width: 100%;
     }
 
@@ -1555,7 +1550,8 @@ em {
         margin-top: 1.5rem;
     }
 
-    .objectif-bien-etre-paragraphe {
+    .objectif-bien-etre-paragraphe,
+    .prevention-accompagnement-list {
         line-height: 1.5rem;
     }
 
@@ -1595,6 +1591,7 @@ em {
 
     .doughnut-paragraphe, .line-paragraphe, #content-etude {
         font-size: .8rem;
+        line-height: 1.5rem;
     }
 
     .line-chart-flex-container {
@@ -1631,8 +1628,13 @@ em {
         margin-top: 1rem !important;
     }
 
-    .naturopathie-subtitle {
+    .naturopathie-subtitle,
+    .prevention-accompagnement-title {
         font-size: .9rem;
+    }
+
+    .massage-prestations-main-container {
+        margin-top: 2.25rem;
     }
 
     .paragraphe-prestation-accopmpagnement-complet {
@@ -1654,11 +1656,19 @@ em {
         font-size: .7rem;
     }
 
-    .consultation-fleurs-paragraphe, .consulation-seule-section  {
+    .consultation-fleurs-paragraphe, 
+    .consulation-seule-section,
+    .massage-paragraphe, 
+    .prevention-accompagnement {
         width: 100%;
     }
 
-    .consultation-fleurs-paragraphe {
+    .massage-container-flex {
+        margin-top: 3rem;
+    }
+
+    .consultation-fleurs-paragraphe,
+    .massage-paragraphe {
         margin-top: 0;
         margin-bottom: 0;
         font-size: .8rem;
@@ -1670,13 +1680,20 @@ em {
         width: 100%;
     }
 
-    .consultation-fleurs-bach-container-flex, .consultation-fleurs-bach-container  {
+    .consultation-fleurs-bach-container-flex, 
+    .consultation-fleurs-bach-container,
+    .message-prestation-section,
+    .message-prestation-section-after-line {
         width: 100%;
-        font-size: .9rem;
+        font-size: .8rem;
+    }
+
+    .message-prestation-section:nth-child(1) {
+        width: 100%;
+        padding-right: 0;
     }
 
     .fleurs-bach-title {
-
         line-height: 1.5rem;
     }
 
@@ -1684,16 +1701,63 @@ em {
         width: 1rem;
     }
 
-    .consultation-fleurs-bach-container {
-        font-size: .8rem;
-    }
-
-    .consultation-fleurs-bach-list {
+    .consultation-fleurs-bach-list,
+    .massage-prestations-list{
         line-height: 1.5rem;
     }
 
+    .mosaique-grid {
+        display: flex;
+        flex-direction: column;
+        width: 100% ;
+        margin-left: 0;
+    }
+    
+    .fleurs-bach-container,
+    .fleurs-bach-title {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .fleur-bach-h4 {
+        font-size: .8rem;
+    }
+
+    .em-element-fleur-bach {
+        margin: 0;
+    }
+
+    .fleurs-bach-list,
+    #massage-content-1,
+    #massage-content-2,
+    #massage-content-3 {
+        font-size: .8rem;
+    }
+
+    .prevention-accompagnement-list {
+        font-size: .7rem;
+    }
+
+    .message-prestation-section:nth-child(3),
+    .message-prestation-section-after-line {
+        margin-top: 2rem;
+        width: 100%;
+        padding: 0;
+    }
+
+    .item-mosaique-grid {
+        display: flex;
+        padding: 1rem;
+        border: none;
+        border-bottom: white 8px solid;
+    }
+
+    .apropos-title {
+        width: 9rem;
+    }
 
 }
+
 @media only screen and (min-width: 810px) and (orientation: portrait) {
     #line-chart-accordion > svg {
         margin-top: 0;
@@ -1717,7 +1781,8 @@ em {
         margin-top: 1rem;
     }
 
-    .consultation-fleurs-bach-container {
+    .consultation-fleurs-bach-container,
+    .massage-prestations-main-container {
         font-size: .8rem;
     }
 
@@ -1743,11 +1808,25 @@ em {
     .line-separator-hor {
         display: none;
     }
+
+    .message-prestation-section:nth-child(3),
+    .message-prestation-section-after-line {
+        margin-top: 2rem;
+        width: 100%;
+        padding: 0;
+    }
+
+    .accompagnement-complet-container {
+        width: 100%;
+        align-self: self-start;
+    }
 }
+
 .hover\:bg-rose-300:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(253 164 175 / var(--tw-bg-opacity));
 }
+
 @media (prefers-color-scheme: dark){
 
   .dark\:border-gray-700{
@@ -1765,6 +1844,7 @@ em {
     color: rgb(255 255 255 / var(--tw-text-opacity));
   }
 }
+
 @media (min-width: 768px){
 
   .md\:absolute{
@@ -1800,6 +1880,7 @@ em {
     display: block;
   }
 }
+
 @media (min-width: 1024px){
 
   .lg\:mr-5{

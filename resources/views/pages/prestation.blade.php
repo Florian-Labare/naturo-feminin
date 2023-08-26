@@ -203,7 +203,7 @@
                         <div class="line-separator line-vertical-fleurs-bach" data-aos="fade-down" data-aos-offset= "250"></div>
                         <div class="fleurs-bach-container">
                             <div class="flex" data-aos="fade-right">
-                                <h4 class="italic">A qui s’adressent les Fleurs de Bach ?</h4><em class="em-element-fleur-bach" id="fleurs-bach">(voir plus)</em>
+                                <h4 class="italic fleur-bach-h4">A qui s’adressent les Fleurs de Bach ?</h4><em class="em-element-fleur-bach" id="fleurs-bach">(voir plus)</em>
                             </div>
                             <div id="fleurs-bach-content" class="mt-3">
                                 <ul class="fleurs-bach-list italic">

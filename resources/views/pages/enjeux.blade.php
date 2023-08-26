@@ -6,7 +6,7 @@
             Notre réponse
         </h2>
         <div class="vos-enjeux-container flex flex-col lg:flex-row lg:justify-between">
-            <div class="prevention-accompagnement" data-aos="fade-down">
+            <div class="prevention-accompagnement mt-4" data-aos="fade-down">
                 <h2 class="prevention-accompagnement-title font-semibold mb-5">Prévention et accompagnement</h2>
                 <ul class="prevention-accompagnement-list uppercase">
                     <li>RPS : les risques psycho-sociaux</li>
