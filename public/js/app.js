@@ -8096,13 +8096,13 @@ var accordions = [{
   emElement: ""
 }, {
   elem: document.getElementById("a-propos-item-2-accordion"),
-  contentId: "content-etude",
+  contentId: "qui-sommes-nous-item-content-2",
   toggleButton: "",
   itemButton: "toggleAproposItem_2",
   emElement: ""
 }, {
   elem: document.getElementById("a-propos-item-3-accordion"),
-  contentId: "content-etude",
+  contentId: "qui-sommes-nous-item-content-3",
   toggleButton: "",
   itemButton: "toggleAproposItem_3",
   emElement: ""

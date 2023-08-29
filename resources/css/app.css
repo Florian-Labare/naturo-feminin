@@ -366,6 +366,17 @@ em {
     margin-left: -1em
 }
 
+.qui-sommes-nous-item::before {
+    content: "";
+    width: .4em;
+    height: .4em;
+    background-color: #fff;
+    display: inline-block;
+    margin-left: -1rem;
+    margin-bottom: .15rem;
+    margin-right: .5rem;
+}
+
 .compte-rendu-plus {
     cursor: pointer;
     color: #efafab;
@@ -542,26 +553,51 @@ em {
 .qui-sommes-nous-paragraphe {
     width: 35rem;
     line-height: 2rem;
-    align-self: center;
+   margin-top: 5rem;
 }
 
-.qui-sommes-nous-item {
+.qui-sommes-nous-items {
     width: 100%;
     background-color: #efafab;
     align-self: center;
 }
 
-.qui-sommes-nous-item:nth-child(1),
-.qui-sommes-nous-item:nth-child(2) {
+.qui-sommes-nous-items:nth-child(1),
+.qui-sommes-nous-items:nth-child(2) {
     margin-bottom: 2rem;
 }
 
-.qui-sommes-nous-item > h2 {
+.qui-sommes-nous-items > div > h2 {
     align-items: center;
+    margin-right: 2rem;
+    font-size: 1rem;
+    color: #fff;
+    
 }
 
-#qui-sommes-nous-item-content-1 {
-    display: none
+.qui-sommes-nous-item-content-1-list,
+.qui-sommes-nous-item-content-2-list,
+.qui-sommes-nous-item-content-3-list {
+    line-height: 2rem;
+    font-weight: lighter;
+    margin-left: 2.5rem;
+    padding: 1.5rem 0;
+}
+
+#qui-sommes-nous-item-content-1,
+#qui-sommes-nous-item-content-2,
+#qui-sommes-nous-item-content-3 {
+    display: none;
+    background-color: #f8d1cf;
+    transition: 1s;
+    border-bottom-left-radius: .5rem;
+    animation: fade-in 1s;
+}
+
+#toggleAproposItem_1:hover,
+#toggleAproposItem_2:hover,
+#toggleAproposItem_3:hover {
+   cursor: pointer ;
 }
 
 
