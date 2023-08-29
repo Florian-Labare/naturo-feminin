@@ -1332,7 +1332,7 @@ em {
 
 .item-mosaique-grid {
     display: flex;
-    padding: 1.5rem;
+    padding: 1.7rem;
     border: white 8px solid;
 }
 
@@ -1351,6 +1351,26 @@ em {
 .qui-sommes-nous-paragraphe {
     width: 35rem;
     line-height: 2rem;
+    align-self: center;
+}
+
+.qui-sommes-nous-item {
+    width: 100%;
+    background-color: #efafab;
+    align-self: center;
+}
+
+.qui-sommes-nous-item:nth-child(1),
+.qui-sommes-nous-item:nth-child(2) {
+    margin-bottom: 2rem;
+}
+
+.qui-sommes-nous-item > h2 {
+    align-items: center;
+}
+
+#qui-sommes-nous-item-content-1 {
+    display: none
 }
 
 
@@ -1599,7 +1619,7 @@ em {
     }
 
     #line-chart-accordion > svg {
-        margin-top: 2.1rem;
+        margin-top: 1.35rem;
         width: 1rem;
     }
 
@@ -1673,6 +1693,10 @@ em {
         margin-bottom: 0;
         font-size: .8rem;
         line-height: 1.5rem;
+    }
+
+    .fleurs-bach-container {
+        padding-left: 0;
     }
 
     .img-resize-huiles-essentielles {
@@ -1832,11 +1856,6 @@ em {
   .dark\:border-gray-700{
     --tw-border-opacity: 1;
     border-color: rgb(55 65 81 / var(--tw-border-opacity));
-  }
-
-  .dark\:bg-gray-800{
-    --tw-bg-opacity: 1;
-    background-color: rgb(31 41 55 / var(--tw-bg-opacity));
   }
 
   .dark\:text-white{

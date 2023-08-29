@@ -38,22 +38,22 @@
             </p>
             <div class="line-separator" data-aos="fade-down"></div>
             <div class="notre-approche-flex-container" data-aos="fade-down">
-                <div class="item-notre-approche max-w-sm bg-white rounded-bl-lg  dark:bg-gray-800 dark:border-gray-700">
+                <div class="item-notre-approche max-w-sm bg-white rounded-bl-lg dark:border-gray-700">
                     <div class="p-5">
                         <h5 class="uppercase tracking-tight text-white dark:text-white font-semibold">Information</h5>
                     </div>
                 </div>
-                <div class="item-notre-approche max-w-sm bg-white rounded-bl-lg dark:bg-g0ay-800 dark:border-gray-700">
+                <div class="item-notre-approche max-w-sm bg-white rounded-bl-lg dark:border-gray-700">
                     <div class="p-5">
                         <h5 class="uppercase tracking-tight text-white dark:text-white font-semibold">Prévention</h5>
                     </div>
                 </div>
-                <div class="item-notre-approche max-w-sm bg-white rounded-bl-lg dark:bg-gray-800 dark:border-gray-700">
+                <div class="item-notre-approche max-w-sm bg-white rounded-bl-lg dark:border-gray-700">
                     <div class="p-5">
                         <h5 class="uppercase tracking-tight text-white dark:text-white font-semibold">Accompagnement</h5>
                     </div>
                 </div>
-                <div class="item-notre-approche max-w-sm bg-white rounded-bl-lg dark:bg-gray-800 dark:border-gray-700">
+                <div class="item-notre-approche max-w-sm bg-white rounded-bl-lg dark:border-gray-700">
                     <div class="p-5">
                         <h5 class="uppercase tracking-tight text-white dark:text-white font-semibold">Pérennisation</h5>
                     </div>

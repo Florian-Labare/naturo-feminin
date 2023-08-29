@@ -12,8 +12,34 @@
                 reflexologie et autres techniques manuelles, micronutrition.
             </p>
             <div class="line-separator" data-aos="fade-down"></div>
-            <div class="mon-equipe-de-partenaire">
-                <h2>Mon équipe de partenaires et moi vous accompagnons en matière</h2>
+            <div class="qui-sommes-nous-items-container">
+                <div class="qui-sommes-nous-item rounded-bl-lg">
+                    <div class="p-5 flex justify-between">
+                        <h2>Mon équipe de partenaires et moi vous accompagnons en matière</h2>
+                        <a id="a-propos-item-1-accordion"><i id="toggleAproposItem_1" class="fas fa-add" style="color: #fff"></i></a>
+                    </div>
+                    <div id="qui-sommes-nous-item-content-1">
+                        <ul class="massage-prestations-list">
+                            <li>D'obligations en matière de santé et sécurité au travail</li>
+                            <li>De prévention des risques psychosociaux et des facteurs de pénibilité</li>
+                            <li>De réduction des risques psychosociaux et des facteurs de pénibilité</li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="qui-sommes-nous-item rounded-bl-lg">
+                    <div class="p-5 flex justify-between">
+                        <h2>Mes outils</h2>
+                        <a id="a-propos-item-2-accordion"><i id="toggleAproposItem_2" class="fas fa-add" style="color: #fff"></i></a>
+                    </div>
+                </div>
+    
+                <div class="qui-sommes-nous-item rounded-bl-lg">
+                    <div class="p-5 flex justify-between">
+                        <h2>Ma conviction</h2>
+                        <a id="a-propos-item-2-accordion"><i id="toggleAproposItem_2" class="fas fa-add" style="color: #fff"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
