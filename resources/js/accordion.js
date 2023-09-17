@@ -92,11 +92,13 @@ function accordionOnClick(contentId, toggleButton, itemButton, emElement) {
     const em = document.getElementsByClassName(emElement)[0];
     const toggle = document.getElementById(toggleButton);
     const itemBtn = document.getElementById(itemButton);
+    console.log('ici');
+    contentToDislpay.style.transition = "all 0.5s";
+    contentToDislpay.style.display = "block";
 
-    console.log(itemBtn, toggle);
-
-    if (contentToDislpay.style.display === "block") {
-        contentToDislpay.style.display = "none";
+    if (contentToDislpay.style.maxHeight == "400px") {
+        contentToDislpay.style.maxHeight = "0";
+        contentToDislpay.style.opacity = "0";
 
         if(toggleButton !== "") {
             toggle.classList.remove('fa-minus');
@@ -112,9 +114,12 @@ function accordionOnClick(contentId, toggleButton, itemButton, emElement) {
             em.style.color = "#efafab";
             em.innerHTML = "(voir plus)";
         }
+    console.log(contentToDislpay.style.maxHeight);
+
 
     } else {
-        contentToDislpay.style.display = "block";
+        contentToDislpay.style.maxHeight = "400px";
+        contentToDislpay.style.opacity = "1";
 
         if(toggleButton !== "") {
             toggle.classList.add('fa-minus');
@@ -130,6 +135,8 @@ function accordionOnClick(contentId, toggleButton, itemButton, emElement) {
             em.style.color = "#a3cd8a";
             em.innerHTML = "(voir moins)";
         }
+    console.log(contentToDislpay.style.maxHeight);
+
     }
 }
 

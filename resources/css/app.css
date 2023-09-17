@@ -289,11 +289,14 @@ html {
 }
 
 #content-etude {
+    max-height: 0;
+    opacity: 0;
+    display: block;
     transition: 0.4s;
     width: 25rem;
     margin-top: .5rem;
     background-color: white;
-    display: none;
+    /*display: none;*/
     overflow: hidden;
 }
 
@@ -394,7 +397,10 @@ em {
 
 
 #compte-rendu-content, #fleurs-bach-content{
-    display: none;
+    max-height: 0;
+    display: block;
+    opacity: 0;
+   /* display: none;*/
 }
 
 .consulation-seule-section {
@@ -491,7 +497,10 @@ em {
 #massage-content-2,
 #massage-content-3,
 #massage-content-4 {
-    display: none;
+    max-height: 0;
+    display: block;
+    opacity: 0;
+   /* display: none;*/
     font-size: .85rem;
 }
 
@@ -587,11 +596,21 @@ em {
 #qui-sommes-nous-item-content-1,
 #qui-sommes-nous-item-content-2,
 #qui-sommes-nous-item-content-3 {
-    display: none;
+    z-index: 100;
+    max-height: 0;
+    display: block;
+    opacity: 0;
+   /* display: none;*/
     background-color: #f8d1cf;
     transition: 1s;
     border-bottom-left-radius: .5rem;
-    animation: fade-in 1s;
+}
+
+#toggleAproposItem_1,
+#toggleAproposItem_2,
+#toggleAproposItem_3 {
+    position: relative;
+    z-index: 9999;
 }
 
 #toggleAproposItem_1:hover,

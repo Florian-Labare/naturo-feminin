@@ -55,7 +55,6 @@
                     <div id="qui-sommes-nous-item-content-3">
                         <ul class="qui-sommes-nous-item-content-3-list">
                             <li class="qui-sommes-nous-item">Faire de la bienveillance un axe stratégique majeur au sein de chaque structure</li>
-                        
                         </ul>
                     </div>
                 </div>
