@@ -13,7 +13,7 @@
 html {
     font-size: 18px;
     scroll-behavior: smooth;
-
+    overflow: scroll;
 }
 
 #qvct,
@@ -569,6 +569,7 @@ em {
     width: 100%;
     background-color: #efafab;
     align-self: center;
+    transition: 5s;
 }
 
 .qui-sommes-nous-items:nth-child(1),
@@ -604,6 +605,7 @@ em {
     background-color: #f8d1cf;
     transition: 1s;
     border-bottom-left-radius: .5rem;
+<<<<<<< HEAD
 }
 
 #toggleAproposItem_1,
@@ -611,6 +613,8 @@ em {
 #toggleAproposItem_3 {
     position: relative;
     z-index: 9999;
+=======
+>>>>>>> b3c27ec (lesta modif)
 }
 
 #toggleAproposItem_1:hover,
@@ -618,7 +622,6 @@ em {
 #toggleAproposItem_3:hover {
    cursor: pointer ;
 }
-
 
 @media all and (max-width: 991px) {
     .line-left,
@@ -923,7 +926,8 @@ em {
     .consultation-fleurs-paragraphe, 
     .consulation-seule-section,
     .massage-paragraphe, 
-    .prevention-accompagnement {
+    .prevention-accompagnement,
+    .qui-sommes-nous-paragraphe {
         width: 100%;
     }
 
@@ -1022,6 +1026,20 @@ em {
 
     .apropos-title {
         width: 9rem;
+    }
+
+    .qui-sommes-nous-paragraphe {
+        margin-top: 1rem;
+        line-height: 1.5rem;
+        font-size: .8rem;
+    }
+
+    .qui-sommes-nous-items {
+        margin-top: 2rem;
+    }
+
+    .qui-sommes-nous-items > div > h2 {
+        font-size: .9rem;
     }
 
 }
