@@ -672,6 +672,9 @@ video {
 .fixed{
   position: fixed;
 }
+.sticky{
+  position: sticky;
+}
 .top-0{
   top: 0px;
 }
@@ -829,7 +832,11 @@ video {
 html {
     font-size: 18px;
     scroll-behavior: smooth;
+    overflow: scroll;
+}
 
+.fixed-header {
+    position: fixed;
 }
 
 #qvct,
@@ -1043,7 +1050,8 @@ html {
 .accompagnement-complet-title,
 .consultation-seule-title,
 .consultation-fleurs-title,
-.massage-prestations-title {
+.massage-prestations-title,
+.quand-engager-demarche-qvct-ou-bien-etre {
     font-size: 1.1rem;
     color: #efafab;
 }
@@ -1054,7 +1062,8 @@ html {
     font-size: 1.3rem;
 }
 
-.consultation-fleurs-title, .massage-prestations-title {
+.consultation-fleurs-title, .massage-prestations-title
+.quand-engager-demarche-qvct-ou-bien-etre {
     margin-bottom: 2rem;
 }
 
@@ -1125,6 +1134,20 @@ em {
 .paragraphe-prestation-accopmpagnement-complet {
     margin-top: 3.5rem;
     width: 28rem;
+    font-weight: lighter;
+    line-height: 2rem;
+}
+
+.paragraphe-quand-engager {
+    margin-top: 3.5rem;
+    width: 33rem;
+    font-weight: lighter;
+    line-height: 2rem;
+}
+
+.paragraphe-notre-fonctionnement {
+    margin-top: 3.5rem;
+    width: 30rem;
     font-weight: lighter;
     line-height: 2rem;
 }
@@ -1318,6 +1341,7 @@ em {
     opacity: 0;
    /* display: none;*/
     font-size: .85rem;
+    margin: 0;
 }
 
 #massage-presta-1,
@@ -1385,6 +1409,7 @@ em {
     width: 100%;
     background-color: #efafab;
     align-self: center;
+    transition: 5s;
 }
 
 .qui-sommes-nous-items:nth-child(1),
@@ -1407,6 +1432,10 @@ em {
     font-weight: lighter;
     margin-left: 2.5rem;
     padding: 1.5rem 0;
+}
+
+.qui-sommes-nous-item-content-3-list {
+    padding-right: 2rem;
 }
 
 #qui-sommes-nous-item-content-1,
@@ -1435,6 +1464,58 @@ em {
    cursor: pointer ;
 }
 
+.quand-faire-appel-a-naturo-container {
+    margin-top: 8rem;
+}
+
+footer {
+    background-color: #a3cd8a; /* Couleur verte */
+    color: #fff; /* Texte blanc */
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styles pour le titre "Contact" */
+.contact-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Styles pour les informations de contact */
+.contact-info {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact-info:last-child {
+    margin-bottom: 20px; /* Espacement supplémentaire pour le dernier élément */
+}
+
+.phone {
+    font-weight: bold;
+}
+
+.email {
+    font-weight: bold;
+}
+
+.name {
+    font-style: italic;
+}
+
+/* Style pour la nouvelle information */
+.location-info {
+    font-style: italic;
+    font-size: 16px;
+}
+
+.quand-faire-appel-a-naturo-flex {
+    margin-top: 3rem;
+}
 
 @media all and (max-width: 991px) {
     .line-left,
@@ -1566,7 +1647,8 @@ em {
     .accompagnement-complet-title,
     .consultation-seule-title,
     .consultation-fleurs-title,
-    .massage-prestations-title {
+    .massage-prestations-title,
+    .quand-engager-demarche-qvct-ou-bien-etre {
         font-size: .9rem !important;
     }
 
@@ -1725,6 +1807,20 @@ em {
         margin-top: 1rem;
         line-height: 1.5rem;
     }
+    .paragraphe-quand-engager {
+        width: 100%;
+        font-size: .8rem;
+        margin-top: 1rem;
+        line-height: 1.5rem;
+    }
+    
+    .paragraphe-notre-fonctionnement {
+        width: 100%;
+        font-size: .8rem;
+        margin-top: 1rem;
+        line-height: 1.5rem;
+    }
+    
 
     .content-accompagnement-complet-grid, .consultation-seule-content  {
         font-size: .8rem;
@@ -1741,7 +1837,8 @@ em {
     .consultation-fleurs-paragraphe, 
     .consulation-seule-section,
     .massage-paragraphe, 
-    .prevention-accompagnement {
+    .prevention-accompagnement,
+    .qui-sommes-nous-paragraphe {
         width: 100%;
     }
 
@@ -1840,6 +1937,38 @@ em {
 
     .apropos-title {
         width: 9rem;
+    }
+
+    .qui-sommes-nous-paragraphe {
+        margin-top: 1rem;
+        line-height: 1.5rem;
+        font-size: .8rem;
+    }
+
+    .qui-sommes-nous-items {
+        margin-top: 2rem;
+    }
+
+    .quand-faire-appel-a-naturo-container {
+        margin-top: 3rem;
+    }
+
+    .qui-sommes-nous-items > div > h2 {
+        font-size: .9rem;
+    }
+
+    .notre-fonctionnement-content {
+        margin-top: 1.5rem;
+    }
+
+    .contact-title {
+        font-size: 18px;
+    }
+    .contact-info {
+        font-size: 14px;
+    }
+    .location-info {
+        font-size: 12px;
     }
 
 }
@@ -1997,4 +2126,5 @@ em {
     text-transform: uppercase;
   }
 }
+
 

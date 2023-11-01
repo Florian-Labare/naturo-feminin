@@ -1,5 +1,5 @@
 <section class="section-prestations p-5 mt-4 max-w-7xl mx-auto md:mt-10">
-    <div id="bien-etre-trigger"></div>
+    <div id="bien-etre"></div>
     <img class="prestation-title" src="{{url('images/prestations.png')}}" alt="" data-aos="fade-left">
     <div id="bien-etre">
         <h2 class="bien-etre-title text-sm font-semibold uppercase lg:text-lg md:items-center lg:mr-5" data-aos="fade-right">
@@ -40,7 +40,7 @@
             </div>
         </div>
     </div>
-    <div id="qvct-trigger"></div>
+    <div id="qvct"></div>
     <div id="qvct">
         <h2 class="bien-etre-title text-sm font-semibold uppercase lg:text-lg md:items-center lg:mr-5" data-aos="fade-right">
             qualité de vie et des conditions de travail en entreprise
@@ -98,7 +98,7 @@
             </div>
         </div>
     </div>
-    <div id="particuliers-trigger"></div>
+    <div id="particuliers"></div>
     <div id="pariculiers">
         <h2 class="particuliers-title text-sm font-semibold uppercase lg:text-lg md:items-center lg:mr-5" data-aos="fade-right">
             Partiucliers
@@ -242,7 +242,7 @@
                 </p>
                 <div class="line-separator" data-aos="fade-down" data-aos-offset= "250"></div>
                 <div>
-                    <img class="img-massage rounded-bl-xl" src="{{url('images/fleurs-bach-flacons.jpg')}}" alt="" data-aos="fade-right">
+                    <img class="img-massage rounded-bl-xl" src="{{url('images/massage-599532_1280.jpg')}}" alt="" data-aos="fade-right">
                 </div>
             </div>
         </div>
