@@ -24,12 +24,12 @@
         </li>
         <li>
             <div class="group">
-                <a href="#" class="nav-link uppercase" data-tab>A propos</a>
+                <a href="#a-propos" class="nav-link uppercase" data-tab>A propos</a>
                 @include('navbar.dropDownAproposItem')
             </div>
         </li>
         <li>
-            <a href="#" class="nav-link uppercase" data-tab>Contact</a>
+            <a href="#contact" class="nav-link uppercase" data-tab>Contact</a>
         </li>
     </ul>
 </nav>

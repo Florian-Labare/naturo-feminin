@@ -25,7 +25,21 @@
             <div id="apropos-container">@include('pages.apropos')</div>
             <div id="contact-container">@include('pages.contact')</div>
         </div>
-        <footer></footer>
+        <footer id="contact">
+            <div class="contact-title">Contact</div>
+            <div class="contact-info">
+                <p class="phone">Téléphone</p>
+                <p>06 25 10 35 52</p>
+            </div>
+            <div class="contact-info">
+                <p class="email">E-mail</p>
+                <p>ineskadmiry.naturofeminin@gmail.com</p>
+            </div>
+            <div class="contact-info">
+                <p class="name">Inès KADMIRY</p>
+            </div>
+            <div class="location-info">Consultation au cabinet à Villerest ou à distance</div>
+        </footer>
     </body>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

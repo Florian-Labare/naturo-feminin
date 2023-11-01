@@ -242,7 +242,7 @@
                 </p>
                 <div class="line-separator" data-aos="fade-down" data-aos-offset= "250"></div>
                 <div>
-                    <img class="img-massage rounded-bl-xl" src="{{url('images/fleurs-bach-flacons.jpg')}}" alt="" data-aos="fade-right">
+                    <img class="img-massage rounded-bl-xl" src="{{url('images/massage-599532_1280.jpg')}}" alt="" data-aos="fade-right">
                 </div>
             </div>
         </div>
