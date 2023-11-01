@@ -15,7 +15,7 @@
     </head>
 
     <body class="top">
-        <header class="bg-white z-50 fixed top-0 w-full shadow">
+        <header class="fixed-header bg-white z-50 fixed top-0 w-full shadow sticky" style="">
             @include('navbar.navbar')
         </header>
         <div class="main-container">

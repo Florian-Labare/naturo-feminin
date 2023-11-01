@@ -8122,20 +8122,11 @@ function accordionOnClick(contentId, toggleButton, itemButton, emElement) {
   var em = document.getElementsByClassName(emElement)[0];
   var toggle = document.getElementById(toggleButton);
   var itemBtn = document.getElementById(itemButton);
-<<<<<<< HEAD
-  console.log('ici');
-  contentToDislpay.style.transition = "all 0.5s";
+  contentToDislpay.style.transition = "all 0.3s";
   contentToDislpay.style.display = "block";
   if (contentToDislpay.style.maxHeight == "400px") {
     contentToDislpay.style.maxHeight = "0";
     contentToDislpay.style.opacity = "0";
-=======
-  console.log(itemBtn, toggle);
-  if (contentToDislpay.style.display === "block") {
-    contentToDislpay.style.display = "none";
-    contentToDislpay.classList.add('hide');
-    contentToDislpay.classList.remove('show');
->>>>>>> b3c27ec (lesta modif)
     if (toggleButton !== "") {
       toggle.classList.remove('fa-minus');
       toggle.style.color = "#efafab";
@@ -8148,16 +8139,9 @@ function accordionOnClick(contentId, toggleButton, itemButton, emElement) {
       em.style.color = "#efafab";
       em.innerHTML = "(voir plus)";
     }
-    console.log(contentToDislpay.style.maxHeight);
   } else {
-<<<<<<< HEAD
     contentToDislpay.style.maxHeight = "400px";
     contentToDislpay.style.opacity = "1";
-=======
-    contentToDislpay.style.display = "block";
-    contentToDislpay.classList.remove('hide');
-    contentToDislpay.classList.add('show');
->>>>>>> b3c27ec (lesta modif)
     if (toggleButton !== "") {
       toggle.classList.add('fa-minus');
       toggle.style.color = "#a3cd8a";
@@ -8170,7 +8154,6 @@ function accordionOnClick(contentId, toggleButton, itemButton, emElement) {
       em.style.color = "#a3cd8a";
       em.innerHTML = "(voir moins)";
     }
-    console.log(contentToDislpay.style.maxHeight);
   }
 }
 

@@ -20,7 +20,7 @@
             </div>
         </li>
         <li>
-            <a href="#enjeux-trigger" class="nav-link uppercase" data-tab>Vos enjeux</a>
+            <a href="#enjeux" class="nav-link uppercase" data-tab>Vos enjeux</a>
         </li>
         <li>
             <div class="group">

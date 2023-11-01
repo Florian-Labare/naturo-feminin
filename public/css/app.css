@@ -672,6 +672,9 @@ video {
 .fixed{
   position: fixed;
 }
+.sticky{
+  position: sticky;
+}
 .top-0{
   top: 0px;
 }
@@ -830,6 +833,10 @@ html {
     font-size: 18px;
     scroll-behavior: smooth;
     overflow: scroll;
+}
+
+.fixed-header {
+    position: fixed;
 }
 
 #qvct,
@@ -1318,6 +1325,7 @@ em {
     opacity: 0;
    /* display: none;*/
     font-size: .85rem;
+    margin: 0;
 }
 
 #massage-presta-1,
@@ -1421,7 +1429,6 @@ em {
     background-color: #f8d1cf;
     transition: 1s;
     border-bottom-left-radius: .5rem;
-<<<<<<< HEAD
 }
 
 #toggleAproposItem_1,
@@ -1429,8 +1436,6 @@ em {
 #toggleAproposItem_3 {
     position: relative;
     z-index: 9999;
-=======
->>>>>>> b3c27ec (lesta modif)
 }
 
 #toggleAproposItem_1:hover,

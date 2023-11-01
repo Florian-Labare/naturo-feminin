@@ -1,7 +1,7 @@
 <section class="section-prestations p-5 mt-4 max-w-7xl mx-auto md:mt-10">
     <img class="prestation-title" src="{{url('images/enjeux.png')}}" alt="" data-aos="fade-left">
     <div id="vos-enjeux">
-        <div id="enjeux-trigger"></div>
+        <div id="enjeux"></div>
         <h2 class="notre-reponse-title text-sm font-semibold uppercase lg:text-lg md:items-center lg:mr-5" data-aos="fade-right">
             Notre réponse
         </h2>
